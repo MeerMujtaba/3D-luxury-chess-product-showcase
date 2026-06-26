@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Rose Chess — Premium Pink & White Luxury Chess Sets</title>
+    <meta name="description" content="Discover Grand Rose Chess — premium pink and white luxury chess sets crafted for modern spaces, elegant gifting, and serious strategy. Shop the collection.">
+    <meta name="author" content="Grand Rose Chess">
+    <meta name="keywords" content="luxury chess set, pink chess set, white chess set, premium chess, designer chess, gift chess set, modern chess, Grand Rose Chess">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader">
+        <div class="preloader__content">
+            <div class="preloader__icon">
+                <svg viewBox="0 0 60 80" class="preloader__crown-svg" aria-hidden="true">
+                    <path d="M30 8 L10 30 L18 28 L24 42 L30 22 L36 42 L42 28 L50 30 L30 8Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                    <rect x="14" y="44" width="32" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                </svg>
+            </div>
+            <div class="preloader__brand">Grand Rose Chess</div>
+            <div class="preloader__bar">
+                <div class="preloader__bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 3D CANVAS (Fixed behind content) ========== -->
+    <canvas id="chess-canvas" aria-label="3D Chess set product showcase"></canvas>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="navbar__inner">
+            <a href="#" class="navbar__logo" aria-label="Grand Rose Chess Home">
+                <svg class="navbar__logo-icon" viewBox="0 0 32 40" aria-hidden="true">
+                    <path d="M16 4 L6 16 L10 15 L13 22 L16 12 L19 22 L22 15 L26 16 L16 4Z" fill="currentColor"/>
+                    <rect x="8" y="24" width="16" height="4" rx="1" fill="currentColor"/>
+                </svg>
+                <span class="navbar__logo-text">Grand Rose Chess</span>
+            </a>
+            <div class="navbar__menu" id="navbar-menu">
+                <a href="#products" class="navbar__link" id="nav-shop">Shop</a>
+                <a href="#showcase" class="navbar__link" id="nav-showcase">Showcase</a>
+                <a href="#reviews" class="navbar__link" id="nav-reviews">Reviews</a>
+                <a href="#contact" class="navbar__link" id="nav-contact">Contact</a>
+            </div>
+            <div class="navbar__actions">
+                <a href="#products" class="navbar__cta" id="nav-buy">Buy Now</a>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content">
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero">
+            <div class="hero__container">
+                <div class="hero__text">
+                    <h1 class="hero__title reveal">
+                        Own the Game<br><span class="hero__title-accent">in Style</span>
+                    </h1>
+                    <p class="hero__subtitle reveal">
+                        Premium pink and white chess sets crafted for modern spaces, elegant gifting, and serious strategy.
+                    </p>
+                    <div class="hero__buttons reveal">
+                        <a href="#products" class="btn btn--primary" id="hero-shop-btn">
+                            <span>Shop Collection</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#showcase" class="btn btn--outline" id="hero-showcase-btn">
+                            <span>View 3D Showcase</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__visual" aria-hidden="true">
+                    <!-- 3D canvas shows through this transparent area -->
+                </div>
+            </div>
+            <div class="hero__scroll-hint reveal">
+                <div class="hero__scroll-mouse">
+                    <div class="hero__scroll-wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- ===== 3D SCROLL SHOWCASE ===== -->
+        <section class="showcase" id="showcase">
+            <div class="showcase__feature" data-index="0">
+                <span class="showcase__feature-number">01</span>
+                <h3 class="showcase__feature-title">Glossy Pink Finish</h3>
+                <p class="showcase__feature-desc">Each piece is finished with a hand-polished glossy pink coating that catches light beautifully from every angle.</p>
+            </div>
+            <div class="showcase__feature" data-index="1">
+                <span class="showcase__feature-number">02</span>
+                <h3 class="showcase__feature-title">Premium White Pieces</h3>
+                <p class="showcase__feature-desc">Crafted from premium composite material with a smooth pearl-white finish for a clean, modern aesthetic.</p>
+            </div>
+            <div class="showcase__feature" data-index="2">
+                <span class="showcase__feature-number">03</span>
+                <h3 class="showcase__feature-title">Handcrafted Board Design</h3>
+                <p class="showcase__feature-desc">Every board is precision-crafted with alternating rose and ivory tiles for timeless elegance and beauty.</p>
+            </div>
+            <div class="showcase__feature" data-index="3">
+                <span class="showcase__feature-number">04</span>
+                <h3 class="showcase__feature-title">Perfect for Décor &amp; Gifting</h3>
+                <p class="showcase__feature-desc">A stunning centerpiece for any room. The perfect luxury gift for chess lovers and interior design enthusiasts alike.</p>
+            </div>
+            <div class="showcase__feature" data-index="4">
+                <span class="showcase__feature-number">05</span>
+                <h3 class="showcase__feature-title">Built for Strategy Lovers</h3>
+                <p class="showcase__feature-desc">Tournament-weight pieces with perfect balance and feel. Designed for serious players who appreciate beauty.</p>
+            </div>
+        </section>
+
+        <!-- ===== FEATURED PRODUCTS ===== -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Our Collection</span>
+                    <h2 class="section-title reveal">Featured Chess Sets</h2>
+                    <p class="section-subtitle reveal">Discover our curated collection of luxury pink and white chess sets, each one crafted to perfection.</p>
+                </div>
+                <div class="products__grid">
+                    <!-- Product 1 -->
+                    <div class="product-card reveal" id="product-card-1">
+                        <div class="product-card__image">
+                            <div class="product-card__badge">Bestseller</div>
+                            <svg class="product-card__icon" viewBox="0 0 100 130" aria-hidden="true">
+                                <!-- Queen Silhouette -->
+                                <circle cx="50" cy="18" r="8" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <path d="M26 95 L30 50 Q32 35 40 30 L50 26 L60 30 Q68 35 70 50 L74 95Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M30 50 L38 55 L50 42 L62 55 L70 50" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <rect x="22" y="97" width="56" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <rect x="18" y="109" width="64" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__name">Grand Rose Classic Set</h3>
+                            <div class="product-card__rating">
+                                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                                <span class="rating-count">(48 reviews)</span>
+                            </div>
+                            <p class="product-card__desc">The signature pink and white chess set with hand-finished pieces and a premium rosewood-accented board.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$189</span>
+                                <button class="btn btn--primary btn--sm" id="add-cart-1">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card reveal" id="product-card-2">
+                        <div class="product-card__image product-card__image--crystal">
+                            <div class="product-card__badge product-card__badge--accent">Limited Edition</div>
+                            <svg class="product-card__icon" viewBox="0 0 100 130" aria-hidden="true">
+                                <!-- King Silhouette -->
+                                <path d="M47 10 L53 10 L53 18 L59 18 L59 24 L53 24 L53 30 L47 30 L47 24 L41 24 L41 18 L47 18Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M30 95 L34 55 Q36 38 44 33 L50 30 L56 33 Q64 38 66 55 L70 95Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <rect x="26" y="97" width="48" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <rect x="22" y="109" width="56" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__name">Grand Rose Crystal Edition</h3>
+                            <div class="product-card__rating">
+                                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                                <span class="rating-count">(32 reviews)</span>
+                            </div>
+                            <p class="product-card__desc">Crystal-clear acrylic pieces with rose gold accents. A collector's masterpiece for the discerning player.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$349</span>
+                                <button class="btn btn--primary btn--sm" id="add-cart-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card reveal" id="product-card-3">
+                        <div class="product-card__image product-card__image--signature">
+                            <svg class="product-card__icon" viewBox="0 0 100 130" aria-hidden="true">
+                                <!-- Knight Silhouette -->
+                                <path d="M35 108 L35 60 Q35 40 48 34 L52 32 Q46 42 50 48 L56 46 Q52 54 56 62 L64 58 Q60 68 64 78 L68 74 Q70 84 68 95 L68 108Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M42 36 L38 28 Q42 24 48 24 L52 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <circle cx="46" cy="38" r="2.5" fill="currentColor"/>
+                                <rect x="28" y="110" width="48" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__name">Grand Rose Signature Board</h3>
+                            <div class="product-card__rating">
+                                <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+                                <span class="rating-count">(27 reviews)</span>
+                            </div>
+                            <p class="product-card__desc">Our premium board-only option. Pair with your own pieces or display as a stunning standalone art piece.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$129</span>
+                                <button class="btn btn--primary btn--sm" id="add-cart-3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY CHOOSE US ===== -->
+        <section class="why-us" id="why-us">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Why Grand Rose</span>
+                    <h2 class="section-title reveal">Crafted with Intention</h2>
+                    <p class="section-subtitle reveal">Every detail of our chess sets is designed to deliver beauty, quality, and lasting joy.</p>
+                </div>
+                <div class="why-us__grid">
+                    <div class="why-us__card reveal" id="why-card-1">
+                        <div class="why-us__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M24 4v4M24 40v4M4 24h4M40 24h4M9.9 9.9l2.8 2.8M35.3 35.3l2.8 2.8M9.9 38.1l2.8-2.8M35.3 12.7l2.8-2.8"/>
+                                <circle cx="24" cy="24" r="10"/>
+                                <path d="M20 24l3 3 5-6"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-us__title">Handcrafted Quality</h3>
+                        <p class="why-us__desc">Each piece is individually shaped, polished, and inspected by skilled artisans to ensure absolute perfection.</p>
+                    </div>
+                    <div class="why-us__card reveal" id="why-card-2">
+                        <div class="why-us__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M24 4l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-us__title">Premium Materials</h3>
+                        <p class="why-us__desc">Made from high-grade composite and finished with a proprietary coating for lasting beauty and exceptional durability.</p>
+                    </div>
+                    <div class="why-us__card reveal" id="why-card-3">
+                        <div class="why-us__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 38V22l12-12 12 12v16"/>
+                                <path d="M8 38h32"/>
+                                <rect x="20" y="28" width="8" height="10" rx="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-us__title">Elegant Design</h3>
+                        <p class="why-us__desc">Our signature pink and white palette brings a fresh, modern aesthetic to the timeless game of chess.</p>
+                    </div>
+                    <div class="why-us__card reveal" id="why-card-4">
+                        <div class="why-us__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M42 14l-6-6-12 12L12 8 6 14l12 12L6 38l6 6 12-12 12 12 6-6-12-12z"/>
+                                <path d="M24 4v4M24 40v4M4 24h4M40 24h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-us__title">Perfect Gift</h3>
+                        <p class="why-us__desc">Beautifully boxed and ready to gift. An unforgettable present for birthdays, weddings, and celebrations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== REVIEWS ===== -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label reveal">Testimonials</span>
+                    <h2 class="section-title reveal">What Our Customers Say</h2>
+                    <p class="section-subtitle reveal">Real reviews from chess lovers and design enthusiasts around the world.</p>
+                </div>
+                <div class="reviews__grid">
+                    <div class="review-card reveal" id="review-1">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="review-card__quote">"Absolutely stunning chess set. The pink pieces are gorgeous and the quality is incredible. It's become the centerpiece of our living room."</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" aria-hidden="true">SE</div>
+                            <div class="review-card__info">
+                                <span class="review-card__name">Sarah Edwards</span>
+                                <span class="review-card__role">Interior Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal" id="review-2">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="review-card__quote">"Bought this as a wedding gift and it was a huge hit. The presentation box is beautiful and the pieces feel incredibly premium in hand."</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" aria-hidden="true">MK</div>
+                            <div class="review-card__info">
+                                <span class="review-card__name">Michael Kim</span>
+                                <span class="review-card__role">Verified Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal" id="review-3">
+                        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="review-card__quote">"As a competitive player, I was skeptical about a 'designer' chess set. But the weight and balance are tournament-quality. Beautiful and functional."</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" aria-hidden="true">AP</div>
+                            <div class="review-card__info">
+                                <span class="review-card__name">Anna Petrov</span>
+                                <span class="review-card__role">Chess Instructor, 1900 ELO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FINAL CTA ===== -->
+        <section class="cta" id="cta">
+            <div class="cta__container">
+                <h2 class="cta__title reveal">Bring Strategy Home<br>in Style</h2>
+                <p class="cta__desc reveal">Upgrade your space with a luxury pink and white chess set designed to be played, displayed, and admired.</p>
+                <a href="#products" class="btn btn--white btn--lg reveal" id="cta-shop-btn">Shop the Collection</a>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer" id="contact">
+            <div class="footer__container">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <a href="#" class="footer__logo" aria-label="Grand Rose Chess Home">
+                            <svg class="footer__logo-icon" viewBox="0 0 32 40" aria-hidden="true">
+                                <path d="M16 4 L6 16 L10 15 L13 22 L16 12 L19 22 L22 15 L26 16 L16 4Z" fill="currentColor"/>
+                                <rect x="8" y="24" width="16" height="4" rx="1" fill="currentColor"/>
+                            </svg>
+                            <span>Grand Rose Chess</span>
+                        </a>
+                        <p class="footer__desc">Premium pink and white chess sets crafted for modern living, elegant gifting, and serious play.</p>
+                        <div class="footer__socials">
+                            <a href="#" class="footer__social" aria-label="Follow us on Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                            </a>
+                            <a href="#" class="footer__social" aria-label="Follow us on X">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <a href="#" class="footer__social" aria-label="Follow us on Pinterest">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.373 23.178c-.07-.633-.133-1.604.028-2.295.145-.624.938-3.977.938-3.977s-.24-.48-.24-1.188c0-1.112.645-1.943 1.448-1.943.683 0 1.012.512 1.012 1.127 0 .687-.437 1.714-.663 2.668-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.255-3.343-3.255-2.276 0-3.612 1.707-3.612 3.472 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A12 12 0 1 0 12 0z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Quick Links</h4>
+                        <a href="#products" class="footer__link">Shop</a>
+                        <a href="#showcase" class="footer__link">3D Showcase</a>
+                        <a href="#reviews" class="footer__link">Reviews</a>
+                        <a href="#why-us" class="footer__link">Why Grand Rose</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Support</h4>
+                        <a href="#" class="footer__link">Contact Us</a>
+                        <a href="#" class="footer__link">Shipping Info</a>
+                        <a href="#" class="footer__link">Returns &amp; Exchanges</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 Grand Rose Chess. All rights reserved.</p>
+                    <p>Crafted with <span class="footer__heart">♛</span> for chess lovers worldwide.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
